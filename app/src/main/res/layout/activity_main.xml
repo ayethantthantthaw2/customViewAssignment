@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activities.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_xlarge">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ivBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_medium2"
+            android:src="@drawable/ic_baseline_chevron_left_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDashBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/ivBack"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:layout_toRightOf="@+id/ivBack"
+            android:text="OMP Dashboard"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_regular_3x"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvInProgress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="@dimen/margin_large"
+            android:background="@drawable/button_background"
+            android:paddingStart="@dimen/margin_medium3"
+            android:paddingTop="@dimen/margin_small"
+            android:paddingEnd="@dimen/margin_medium3"
+            android:paddingBottom="@dimen/margin_medium"
+            android:text="In Progress"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDashBoard"
+            android:layout_marginStart="@dimen/margin_medium2"
+            android:layout_marginTop="@dimen/margin_medium2"
+            android:text="Create additional pages"
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_big"
+            android:textStyle="bold" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDays"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginStart="@dimen/margin_medium2"
+            android:text="03 days | Dec 18,2019"
+            android:textColor="#E4837F7F"
+            android:textSize="@dimen/text_regular_3x" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvProfiles"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvTitle"
+            android:layout_marginTop="@dimen/margin_medium3" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDays"
+            android:layout_marginStart="@dimen/margin_medium3"
+            android:layout_marginTop="@dimen/margin_xlarge">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvData"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Data"
+                android:textColor="#E4837F7F"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTask"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/margin_xxxLarge"
+                android:layout_marginEnd="@dimen/margin_xxxLarge"
+                android:layout_toRightOf="@+id/tvData"
+                android:text="Tasks"
+                android:textColor="#E4837F7F"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvShowsInDays"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:layout_toRightOf="@+id/tvTask"
+                android:text="Show in days"
+                android:textColor="#E4837F7F"
+                android:textSize="@dimen/text_regular_3x" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rvTasks"
+                android:layout_alignLeft="@+id/tvTask"
+                android:layout_marginTop="@dimen/margin_medium3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
