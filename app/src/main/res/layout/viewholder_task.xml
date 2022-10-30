@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="255dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background_task_viewholder"
+    android:layout_height="130dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTaskStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:text="In Progress"
+        android:textColor="#DDEC584B"
+        android:textSize="@dimen/text_regular"
+         />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTaskTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium"
+        android:text="Contact Page"
+        android:layout_below="@+id/tvTaskStatus"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDesign"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_medium3"
+        android:layout_marginBottom="@dimen/margin_medium3"
+        android:layout_toEndOf="@+id/tvN"
+        android:text="#Design"
+        android:textColor="#E4837F7F" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvComment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium2"
+        android:layout_below="@+id/tvTaskTitle"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:drawablePadding="@dimen/margin_medium2"
+        android:drawableStart="@drawable/ic_baseline_comment_24dp_black"
+        android:text="3" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvAttached"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_medium2"
+        android:layout_below="@+id/tvTaskTitle"
+        android:layout_marginTop="@dimen/margin_xxlarge"
+        android:drawablePadding="@dimen/margin_medium2"
+        android:layout_toEndOf="@id/tvComment"
+        android:drawableStart="@drawable/ic_baseline_attach_file_24"
+        android:text="3" />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/margin_medium2"
+        android:layout_marginBottom="@dimen/margin_medium2"
+        android:layout_toEndOf="@+id/tvAttached"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_regular_3x"
+        android:text="N'163" />
+    <com.attt.customviewsassignment.Views.components.CircleImageView
+        android:id="@+id/ivProfile1"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:scaleType="centerCrop"
+        app:stokeColor="@color/white"
+        android:layout_marginTop="@dimen/margin_large"
+        android:layout_toEndOf="@+id/tvN"
+        android:src="@drawable/girl"
+        android:layout_below="@+id/tvTaskTitle"
+        app:cornerRadius="25dp" />
+
+</RelativeLayout>
