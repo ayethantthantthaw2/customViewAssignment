@@ -3,12 +3,19 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/background_task.xml" value="0.1" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/background_task_viewholder.xml" value="0.1" />
         <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/button_background.xml" value="0.1625" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1" />
         <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/ic_baseline_chevron_left_24.xml" value="0.1" />
         <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/ic_baseline_chevron_left_black_24dp.xml" value="0.1" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/ic_baseline_comment_24dp_black.xml" value="0.1205" />
         <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1" />
-        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/activity_main.xml" value="0.16" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/activity_main.xml" value="0.1" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/bottomsheet_profile.xml" value="0.2234375" />
         <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/viewholder_profile.xml" value="0.1" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/viewholder_task.xml" value="0.16" />
+        <entry key="..\:/Users/Public/CustomViewsAssignment/app/src/main/res/layout/viewpod_user.xml" value="0.2234375" />
       </map>
     </option>
   </component>

@@ -30,6 +30,9 @@ class CircleImageView @JvmOverloads constructor(
     }
 
     override fun onDraw(canvas: Canvas?) {
+        paint.color=stokeColor
+        paint.style=Paint.Style.FILL_AND_STROKE
+        paint.strokeWidth=stokeSize
 
         val rectangle = RectF(0f, 0f, width.toFloat(), height.toFloat())
 
