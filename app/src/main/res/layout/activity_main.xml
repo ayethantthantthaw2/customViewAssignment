@@ -65,7 +65,7 @@
             android:layout_below="@id/tvTitle"
             android:layout_marginStart="@dimen/margin_medium2"
             android:text="03 days | Dec 18,2019"
-            android:textColor="#E4837F7F"
+            android:textColor="@color/secondary_text_color"
             android:textSize="@dimen/text_regular_3x" />
 
         <androidx.recyclerview.widget.RecyclerView

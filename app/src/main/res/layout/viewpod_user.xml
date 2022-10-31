@@ -1,6 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<com.attt.customviewsassignment.Views.components.CircleImageView
+    android:id="@+id/ivProfile3"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    app:cornerRadius="75dp"
+    android:layout_centerHorizontal="true"
+    app:stokeColor="@color/white"
+    app:srcCompat="@drawable/girl"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvClosedTask"
+        android:text="Closed Tasks"
+        android:layout_marginTop="@dimen/margin_xlarge"
+        android:layout_marginStart="@dimen/margin_medium2"
+        android:textSize="@dimen/text_regular_2x"
+        android:textColor="@color/secondary_text_color"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvClosedTaskCount"
+        android:text="361"
+        android:textSize="@dimen/text_regular_2x"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/margin_xxlarge"
+        android:textColor="@color/black"
+        android:layout_marginTop="@dimen/margin_medium"
+        android:layout_below="@+id/tvClosedTask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</RelativeLayout>
